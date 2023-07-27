@@ -8,7 +8,7 @@ namespace Umed_Alif_Academy_Day_4_HW_4
 {
     public class Client
     {
-        public int ClientID { get; set; }
+        public int ClientId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
     }

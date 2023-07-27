@@ -10,14 +10,14 @@ namespace Umed_Alif_Academy_Day_4_HW_4
     {
         public Client CreateClient(int clientId, string firstName, string lastName)
         {
-            if (string.IsNullOrWhiteSpace(firstName) || string.IsNullOrWhiteSpace(lastName))
+            if (firstName is { Length: 0} || lastName is { Length: 0})
             {
                 throw new ArgumentException("This field cannot be empty. It is a required field.");
             }
 
             Client client = new Client
             {
-                ClientID = clientId,
+                ClientId = clientId,
                 FirstName = firstName,
                 LastName = lastName
             };
