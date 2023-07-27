@@ -10,7 +10,7 @@ namespace Umed_Alif_Academy_Day_4_HW_4
     {
         public Order CreateOrder(int orderId, string description, decimal price, DateTime orderDate, string deliveryType, string deliveryAddress)
         {
-            Order order = new Order
+            Order order = new()
             {
                 OrderId = orderId,
                 Description = description,
